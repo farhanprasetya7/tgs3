@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart' as widgets;
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -15,9 +16,18 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Top Up'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -33,10 +43,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Top Up', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Transfer'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -52,10 +71,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Transfer', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Scan QR'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -71,10 +99,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Scan QR', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Riwayat'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -90,7 +127,7 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Riwayat', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 20),
@@ -99,9 +136,18 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Pulsa & Data'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -120,10 +166,19 @@ class MenuPage extends StatelessWidget {
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Voucher Game'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -142,10 +197,19 @@ class MenuPage extends StatelessWidget {
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Transportasi'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -164,10 +228,19 @@ class MenuPage extends StatelessWidget {
                         style: TextStyle(fontSize: 12),
                       ),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Tagihan Air'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -183,7 +256,7 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Tagihan Air', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 20),
@@ -192,9 +265,18 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Listrik'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -210,10 +292,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Listrik', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'TV Kabel'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -229,10 +320,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('TV Kabel', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Streaming'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -248,10 +348,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Streaming', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Belanja'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -267,7 +376,7 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Belanja', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 20),
@@ -276,9 +385,18 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Donasi'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -294,10 +412,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Donasi', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Asuransi'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -313,10 +440,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Asuransi', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Investasi'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -332,10 +468,19 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Investasi', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
-                  Column(
+                  )),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuTujuanPage(judul: 'Lainnya'),
+                        ),
+                      );
+                    },
+                    child: Column(
                     children: [
-                      Container(
+                      widgets.Container(
                         width: 65,
                         height: 65,
                         decoration: BoxDecoration(
@@ -351,7 +496,7 @@ class MenuPage extends StatelessWidget {
                       const SizedBox(height: 5),
                       const Text('Lainnya', style: TextStyle(fontSize: 12)),
                     ],
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 30),
@@ -367,6 +512,26 @@ class MenuPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+
+class MenuTujuanPage extends StatelessWidget {
+  final String judul;
+
+  const MenuTujuanPage({super.key, required this.judul});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(judul == 'Top Up' ? 'Top-Up' : judul),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.black,
+        elevation: 0,
+      ),
+      body: const SizedBox.expand(),
     );
   }
 }

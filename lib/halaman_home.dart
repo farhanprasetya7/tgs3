@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart' as widgets;
 
 import 'halaman_menu.dart';
 
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Container(
+            widgets.Container(
               padding: EdgeInsets.all(20),
               margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -39,7 +40,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            widgets.Container(
               padding: EdgeInsets.all(20),
               margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
